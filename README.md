@@ -60,6 +60,7 @@
 In the second part of the SimpleCNN project, the focus is on completing the neural network pipeline by implementing the Fully Connected (Linear) Layer, Arg Max, Prediction Reporting, and Accuracy Reporting. These steps are critical for transforming the outputs from earlier layers into meaningful predictions and evaluating model performance.
 
 **1. Fully Connected (Linear) Layer**
+
 The Fully Connected Layer takes the feature map from the Max Pooling layer and generates class scores. Key operations in this layer include:
 
 Flattening the Input: The 3D input feature map is flattened into a 1D array.
@@ -79,16 +80,19 @@ where:
    - y is the output vector of scores.
 
 **2. Arg Max**
+
 The Arg Max function selects the class with the highest score from the Fully Connected Layer output. This class is the model's predicted label for the input image.
 
    - Input: A 1D array of class scores.
    - Output: The index of the highest score in the array.
 
 **3. Reporting Predictions**
+
 The report_prediction procedure outputs the prediction results for each image in the dataset. It prints in the format: \text{[image_index]:[expected_output],[actual_output]}
 Additionally, it tracks the number of correct and incorrect predictions using global variables.
 
 **4. Reporting Accuracy**
+
 The report_accuracy procedure calculates and prints the overall accuracy of the model in percentage format: \text{[accuracy_percent]%}
 
 Accuracy is determined as:
