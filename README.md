@@ -102,6 +102,7 @@ Accuracy= Correct Predictions/Total Predictions × 100
 - Accuracy Reporting: The overall model accuracy is computed and displayed using report_accuracy.
 
 **Linux System Calls**
+
 Printing outputs to the terminal in assembly is achieved using Linux system calls. Key registers for the write system call are:
 
    - X0: File descriptor (#1 for STDOUT).
@@ -110,6 +111,7 @@ Printing outputs to the terminal in assembly is achieved using Linux system call
    - X8: System call number (0x40 for write).
    
 **Implementation Steps**
+
 The project is implemented in four main functions in assembly:
 
    - report_prediction: Logs predictions and tracks performance.
@@ -118,6 +120,7 @@ The project is implemented in four main functions in assembly:
    - linear: Implements the Fully Connected Layer computation.
    
 **Running the Project**
+
 After completing the implementation:
 
    - Upload the project files to the Raspberry Pi server.
